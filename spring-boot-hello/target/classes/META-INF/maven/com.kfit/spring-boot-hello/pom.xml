@@ -75,6 +75,32 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
 		    <artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+		<!-- 引入thymeleaf依赖 -->
+		
+		<dependency>
+		   <groupId>org.springframework.boot</groupId>
+		   <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		
+		<!-- 引入 freemark依赖  -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
+		
+		
+		  <!-- servlet 依赖. -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+  
+ <!-- JSTL（JSP Standard Tag Library，JSP标准标签库)是一个不断完善的开放源代码的JSP标签库，是由apache的jakarta小组来维护的。 --> 
+     <dependency>
+           <groupId>javax.servlet</groupId>
+           <artifactId>jstl</artifactId>
+       </dependency>
 		
   </dependencies>
 
