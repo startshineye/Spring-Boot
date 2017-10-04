@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxm.web.dao.DemoMapper">
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+        insert into demo (name) values(#{name})
+     </insert>
+    
+    <delete id="deleteById">
+      delete from demo where id = #{id}
+    </delete>
+    
+    <select id="getById" resultType="com.yxm.web.bean.Demo">
+     select * from demo where id = #{0}
+    </select>
+    
+    <select id="getAll" resultType="com.yxm.web.bean.Demo">
+     select * from demo
+    </select>
+    
+    <update id="updateDemo">
+      update demo set name = #{name} where id=#{id}
+    </update>
+</mapper>
